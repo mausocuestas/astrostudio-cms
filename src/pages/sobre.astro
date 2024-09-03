@@ -1,5 +1,12 @@
 ---
-
+const pageTitle = "Sobre este Blog";
+ const identify = { 
+	fisrtname: "Sarah",
+	country: "Canadá",
+	occupation: "Escritora Técnica",
+	hobbies: ["fotografia", "observar pássaros", "beisebol"]
+}
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Escrever Documentação"]
 ---
 
 <html lang="pt-BR">
@@ -8,19 +15,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Início</a>
-
-        <a href="/sobre">Sobre</a>
-
-        <a href="/blog">Blog</a> 
-		
-		<h1>Sobre este Blog</h1>
-        <h2>... e notas sobre o Astro DB</h2>
-        <p>Estou resolvendo o tutorial introdutório do Astro. Esta é a segunda página no meu website, e é a primeira que eu mesmo construí!</p>
-        <p>Este site será atualizado enquanto eu completo mais desse tutorial, então continue verificando e veja como minha jornada está indo!</p>
-		<h2>Blog Astro DB</h2>
+		<a href="/">Início</a>
+		<a href="/sobre">Sobre</a>
+		<a href="/blog">Blog</a>
+		<h1>{pageTitle}</h1>
+		<h2>... e notas sobre o Astro DB</h2>
+		<p>
+			Estou resolvendo o tutorial introdutório do Astro. Esta é a segunda
+			página no meu website, e é a primeira que eu mesmo construí!
+		</p>
+		<p>
+			Este site será atualizado enquanto eu completo mais desse tutorial,
+			então continue verificando e veja como minha jornada está indo!
+		</p>
 	</body>
 </html>
